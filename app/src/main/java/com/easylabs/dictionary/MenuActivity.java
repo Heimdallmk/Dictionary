@@ -5,15 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 public class MenuActivity
         extends AppCompatActivity implements View.OnClickListener {
     // Объявляем объекты
-    Button btTask1;
-    Button btTask2;
-    Button btTask3;
-    Button btTask4;
+    RelativeLayout btTask1;
+    RelativeLayout btTask2;
+    RelativeLayout btTask3;
+    RelativeLayout btTask4;
 
     // Вызывается при запуске Activity
     @Override
@@ -27,10 +28,10 @@ public class MenuActivity
         // findViewById - возвращает элемент типа View
         // Этот тип явл. основным для всех GUI-элементов
         // Инициализируем кнопки
-        btTask1 = (Button) findViewById(R.id.btTask1);
-        btTask2 = (Button) findViewById(R.id.btTask2);
-        btTask3 = (Button) findViewById(R.id.btTask3);
-        btTask4 = (Button) findViewById(R.id.btTask4);
+        btTask1 = (RelativeLayout) findViewById(R.id.btTask1);
+        btTask2 = (RelativeLayout) findViewById(R.id.btTask2);
+        btTask3 = (RelativeLayout) findViewById(R.id.btTask3);
+        btTask4 = (RelativeLayout) findViewById(R.id.btTask4);
 
         // Добавляем обработчик на нажатие кнопки
         btTask1.setOnClickListener(this);
@@ -48,21 +49,18 @@ public class MenuActivity
         // Определяем, какая кнопка была нажата
         switch (viewId) {
             case R.id.btTask1:
-                Data.num = 1;
+                Data.num = 0;
                 break;
             case R.id.btTask2:
-                Data.num = 2;
+                Data.num = 1;
                 break;
             case R.id.btTask3:
-                Data.num = 3;
+                Data.num = 2;
                 break;
             case R.id.btTask4:
-                Data.num = 4;
+                Data.num = 3;
                 break;
         }
-
-        Toast.makeText(this, "Нажата кнопка " + Data.num, Toast.LENGTH_SHORT).show();
-        System.out.println("Нажата кнопка " + Data.num);
 
         // Создаём намерение на запуск другого Activity
         Intent intent = new Intent(this, DictionaryActivity.class);
