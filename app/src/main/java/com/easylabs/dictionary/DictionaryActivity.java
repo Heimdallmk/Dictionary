@@ -25,6 +25,8 @@ public class DictionaryActivity extends AppCompatActivity implements View.OnClic
 
         setTitle("Тема " + Data.tasksTitles[Data.num]);
 
+        System.out.println();
+
         btRus = (Button) findViewById(R.id.btRus);
         btEng = (Button) findViewById(R.id.btEng);
         tvDictionary = (TextView) findViewById(R.id.tvDictionary);
