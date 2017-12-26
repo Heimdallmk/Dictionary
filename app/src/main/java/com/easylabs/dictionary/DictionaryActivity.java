@@ -23,9 +23,21 @@ public class DictionaryActivity extends AppCompatActivity implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dictionary);
 
-        setTitle("Тема " + Data.tasksTitles[Data.num]);
+       // setTitle(getString(R.string.dictionary_activity_title) + Data.tasksTitles[Data.num]);
 
-        System.out.println();
+        // Получаем значение или Тема: или Topic:
+        String strTitle = getString(R.string.dictionary_activity_title);
+
+        switch (Data.num){
+            // Получаем или Животные, или Animals
+            case 0: strTitle+= getString(R.string.animal_topic_title); break;
+            case 1: strTitle+= getString(R.string.technics_topic_title);break;
+            case 2: strTitle+= getString(R.string.clothes_topic_title);break;
+            case 3: strTitle+= getString(R.string.food_topic_title);break;
+        }
+
+        // Указываем title нашего окна
+        setTitle(strTitle);
 
         btRus = (Button) findViewById(R.id.btRus);
         btEng = (Button) findViewById(R.id.btEng);

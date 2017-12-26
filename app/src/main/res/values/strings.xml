@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Dictionary</string>
+    <string name="menu_activity_title">Choise topic</string>
+    <string name="dictionary_activity_title">Topic: </string>
+
+    <string name="animal_topic_title">Animals</string>
+    <string name="technics_topic_title">Technics</string>
+    <string name="clothes_topic_title">Clothes</string>
+    <string name="food_topic_title">Food</string>
 </resources>

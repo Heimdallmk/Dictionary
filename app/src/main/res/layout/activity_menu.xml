@@ -27,7 +27,7 @@
                 android:layout_centerHorizontal="true"
                 android:background="#60000000"
                 android:gravity="center"
-                android:text="Animals"
+                android:text="@string/animal_topic_title"
                 android:textColor="#ffffff"
                 android:textStyle="bold" />
         </RelativeLayout>
@@ -56,7 +56,7 @@
                 android:layout_centerHorizontal="true"
                 android:background="#60000000"
                 android:gravity="center"
-                android:text="Technics"
+                android:text="@string/technics_topic_title"
                 android:textColor="#ffffff"
                 android:textStyle="bold" />
         </RelativeLayout>
@@ -79,7 +79,7 @@
                 android:layout_centerHorizontal="true"
                 android:background="#60000000"
                 android:gravity="center"
-                android:text="Clothes"
+                android:text="@string/clothes_topic_title"
                 android:textColor="#ffffff"
                 android:textStyle="bold" />
         </RelativeLayout>
@@ -106,7 +106,7 @@
                 android:layout_centerHorizontal="true"
                 android:background="#60000000"
                 android:gravity="center"
-                android:text="Food"
+                android:text="@string/food_topic_title"
                 android:textColor="#ffffff"
                 android:textStyle="bold" />
         </RelativeLayout>

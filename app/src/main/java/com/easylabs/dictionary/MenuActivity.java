@@ -23,7 +23,8 @@ public class MenuActivity
         setContentView(R.layout.activity_menu);
 
         // Изменяет заголовок окна
-        setTitle("Выберите тему");
+        // Получаем строку из файлов ресурсов нашего приложения
+        setTitle(getString(R.string.menu_activity_title));
 
         // findViewById - возвращает элемент типа View
         // Этот тип явл. основным для всех GUI-элементов

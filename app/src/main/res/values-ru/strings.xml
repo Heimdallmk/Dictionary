@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Словарь</string>
+    <string name="menu_activity_title">Выберите тему</string>
+    <string name="dictionary_activity_title">Тема: </string>
+
+    <string name="animal_topic_title">Животные</string>
+    <string name="technics_topic_title">Техника</string>
+    <string name="clothes_topic_title">Одежда</string>
+    <string name="food_topic_title">Еда</string>
+</resources>
